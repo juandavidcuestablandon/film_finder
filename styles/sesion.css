@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Encode+Sans:wght@300&display=swap');
+:root{
+    --back-- : #151515;
+    --textColor--: #F2F2F2;
+    --crownColor-- : #f4cd2a;
+    --FontTitles--: 'Bangers', cursive;
+    --fontText--: 'Encode Sans', sans-serif;
+    --colorSeg--: #A60303;
+
+
+
+
+}
+*{
+    font-family: var(--fontText--);
+    color: #F2F2F2;
+    box-sizing: border-box;
+
+    
+}
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: var(--back--); 
+}
+
+header {
+    margin-top: 0;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--back--);
+    
+  
+}
+
+header .logo {
+    height: auto;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.logo img {
+    height: 4rem;
+    width: 5rem;
+}
+nav {
+    padding-right: 1rem;
+    background: transparent;
+    margin-right: 5rem;
+   
+}
+
+nav ul  {
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    background-color: transparent;
+   
+    
+}
+
+nav ul li a {
+    font-family: var(--FontTitles--);
+    text-decoration: none;
+    transition: .5s;
+    background: transparent;
+}
+
+nav ul li a:hover{
+    color: var(--colorSeg--);
+}
+
+
+
+
+/* contenido  -------------------*/
+
+.login {
+    display: flex;
+    
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.login .img {
+ width: 65%;
+}
+
+.login .img img {
+    width: 100%;
+    height: 30rem;
+    margin-left:1rem ;
+    box-shadow: 2px 2px 10px var(--textColor--);
+   
+}
+
+.login .box {
+    width: 35%;
+    padding: 5rem;
+  
+}
+
+.box form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px var(--crownColor--);
+   height: auto;
+   width: 22rem;
+   padding: 1rem;
+    
+
+}
+
+.box form div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    align-items: center;
+    margin-bottom: 1rem;
+  
+}
+
+.box form div label {
+    font-family: var(--FontTitles--);
+    font-size: 2rem;
+}
+
+.box form input {
+    margin: 0.5rem 0.5rem;
+}
+#user, #pass {
+    color: black;
+}
+
+.box form .btn {
+    background-color: var(--colorSeg--);
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    transition: .6s;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.box form .btn:hover{
+    background-color: var(--crownColor--);
+    color: var(--colorSeg--);
+    border: 2px solid var(--colorSeg--);
+
+}
+
+
+.box form  .message{
+    justify-content: center;
+       
+}
+
+.box form  .message p {
+    color: var(--crownColor--);
+    font-family: var(--FontTitles--);
+}
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: var(--colorSeg--);
+    height: 6rem;
+    margin-top: 0.5rem;
+}
+
+
+/* session styles  */
+
+.container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    border: 2px solid var(--textColor--);
+    margin-top: 1rem;
+}
+
+.container aside {
+    background-color: var(--back--);
+    height: 100%;
+    width: 30%;
+}
+
+.container aside div {
+    border: 1px solid var(--textColor--);
+    width: 100%;
+    align-items: center;
+    height: 10rem;
+}
+.container aside div button{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    transition: .5s;
+}
+
+
+.container aside div  h3 {
+    font-size: 3rem;
+    font-family: var(--FontTitles--);
+    color: var(--crownColor--);
+    text-align: center;   
+    
+}
+
+
+
+.container aside div button:hover{
+    background-color: var(--colorSeg--);
+    color: var(--textColor--);
+}
+
+
+
+.container #apires{
+    background-color: var(--textColor--);
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+.film ,.tv{
+    width: 18rem;
+    margin: 5rem;
+    background-color: var(--back--);
+    border-radius: 1rem;
+    box-shadow: 5px 0.5px 15px var(--crownColor--);
+    text-align: center;
+    
+}
+
+.film  img , .tv img {
+    width:18rem ;
+    border-radius: 1rem;
+}
+
+#img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--back--);
+} 
+
+#img img {
+    width: 65%;
+    margin-bottom: 1rem;
+   
+}
+
+#img h3 {
+    color : var(--textColor--);
+    font-family: var(--fontText--);
+    font-size: 2rem;
+
+}
+
+.like {
+
+    width: 50%;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: .5s;
+    border-radius: 0.5rem;
+}
+
+.like:hover{
+ background-color:var(--textColor--);
+
+}
+
+
+.film .text {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+}
+
+#tvContainer  .film  {
+    box-shadow: 5px 0.5px 15px var(--back--);
+}

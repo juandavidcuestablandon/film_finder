@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Encode+Sans:wght@300&display=swap');
+:root{
+    --back-- : #151515;
+    --textColor--: #F2F2F2;
+    --crownColor-- : #f4cd2a;
+    --FontTitles--: 'Bangers', cursive;
+    --fontText--: 'Encode Sans', sans-serif;
+    --colorSeg--: #A60303;
+
+
+
+
+}
+*{
+    font-family: var(--fontText--);
+    color: #F2F2F2;
+    box-sizing: border-box;
+   
+    
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: var(--back--); 
+}
+
+header {
+    margin-top: 0;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    width: 100%;
+    position: fixed;
+    background-color: var(--back--);
+    
+  
+}
+
+header .logo {
+    height: auto;
+    margin-left: 1rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.logo img {
+    height: 4rem;
+    width: 5rem;
+}
+nav {
+    padding-right: 1rem;
+    background: transparent;
+}
+
+nav ul  {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    background-color: transparent;
+   
+    
+}
+
+nav ul li a {
+    font-family: var(--FontTitles--);
+    text-decoration: none;
+    transition: .5s;
+    background: transparent;
+}
+
+nav ul li a:hover{
+    color: var(--colorSeg--);
+}
+
+.segond>li a:hover{
+    color: var(--crownColor--);
+}
+
+
+
+
+/* seccion video ------------------------------------- */
+.contenedor-video {
+    position: relative;
+  }
+  
+  .video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .texto-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: auto;
+    
+    
+  }
+  
+  .texto-video h2 {
+    font-size: 3rem;
+    margin-bottom: 160px;
+    font-family: var(--FontTitles--);
+    color: var(--colorSeg--);
+    text-decoration:wavy;
+
+  }
+  
+   .btn{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--crownColor--);
+    transition: .5s;
+    margin-top: 1rem;
+    
+    
+    
+  }
+
+   .btn:hover{
+    background-color: var(--colorSeg--);
+    color: var(--textColor--);
+    
+  }
+
+
+  /* seccion peliculas ------------------------ */
+
+  #peliculas, #television, #suscripciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    height: 50rem;
+  }
+
+
+  #peliculas h2{
+    font-family: var(--FontTitles--);
+    font-size: 3rem;
+    color: var(--colorSeg--);
+
+  }
+
+  #peliculas .box p{
+    font-size: 1.2rem;
+
+  }
+
+
+  #peliculas .container {
+    display: flex;
+    align-content: end;
+  }
+
+  .container .box{
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+ .container .box img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+ }
+
+
+ .btns {
+  height: 2rem;
+  width: 20rem;
+  margin-top: 4.2rem;
+  text-align: center;
+  border: solid 2px var(--textColor--);
+  text-decoration: none;
+  transition: .5s;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .btns:hover{
+  background: var(--crownColor--);
+  border-color: var(--colorSeg--);
+  color: var(--back--);
+ }
+
+/* seccion tv ---------------------------*/
+
+#television {
+  background-color: var(--textColor--);
+
+}
+
+#television h2 {
+  color: var(--back--);
+  font-size: 3rem;
+  font-family: var(--FontTitles--);
+}
+
+
+#television .container{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+#television .container .box{
+  padding: 1rem;
+}
+
+#television .container .box p{
+  color: var(--back--);
+  font-size: 1.2rem;
+} 
+
+#television .container .box .btns{
+  color: var(--back--);
+  border-color: var(--back--);
+}
+
+
+/* seccion suscripciones ------------------------------- */
+
+#suscripciones h2{
+  font-size: 3rem;
+  font-family: var(--FontTitles--);
+  color: var(--crownColor--);
+}
+
+
+#suscripciones .contenido{
+  display: flex;
+  justify-content: space-around;
+}
+
+#suscripciones .contenido .box{
+  border: 2px solid var(--colorSeg--);
+  margin: 1rem;
+  background-color: var(--textColor--);
+  border-radius: .7rem;
+  height: 25rem;
+  width: 25%;
+}
+
+.contenido .box .title{
+  background-color: var(--colorSeg--);
+  height: 4rem;
+  padding: 1rem;
+  border-top-left-radius:.5rem ;
+  border-top-right-radius:.5rem ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contenido .box .title h3, .contenido .box .text p,.contenido .box .price h3 {
+  margin: 0;
+}
+
+.contenido .box .text{
+  height: 14rem;
+  padding: 1rem;
+  border-top: 2px solid var(--back--);
+  border-bottom: 2px solid var(--back--);
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido .box .text p{
+  color: var(--back--);
+  margin-top: 2px;
+}
+
+
+.contenido .box .price {
+  height: 4rem;
+  border-bottom: 2px solid var(--back--);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.contenido .box .price h3{
+  font-size: 1.4rem;
+}
+
+.contenido .box .price h3, .contenido .box .price P  {
+  font-family: var(--FontTitles--);
+  color: var(--back--);
+  margin-top: .5rem;
+
+}
+
+.contenido .box .contratc{
+  background-color: var(--crownColor--);
+  height: 2.8rem;
+  border-bottom-left-radius:.6rem ;
+  border-bottom-right-radius:.6rem ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.contenido .box .contratc:hover, .contenido .box .contratc a h3:hover{
+  background-color: var(--colorSeg--);
+   font-family: var(--FontTitles--);
+   color: var(--textColor--);
+}
+
+.contenido .box .contratc a {
+  text-decoration: none;
+}
+
+.contenido .box .contratc a h3{
+  color: var(--back--);
+  font-family: var(--FontTitles--);
+  font-size: 2rem;
+}
+
+.contenido .box .contratc a h3:hover{
+  color: var(--textColor--);
+ 
+}
+
+
+/* footer ------------------------------ */
+
+footer{
+  display: flex;
+  background: var(--colorSeg--);
+  justify-content: space-between;
+  padding: 1rem;
+  height: auto;
+  align-items: center;
+}
+
+
+.redes {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.bx {
+  font-size: 2rem;
+  
+}
+
+.first {
+  color: rgb(184, 115, 51);
+}
+.second{
+  color: #D2D4D7  ;
+}
+
+.three{
+  color:var(--crownColor--);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

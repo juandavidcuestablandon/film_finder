@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Encode+Sans:wght@300&display=swap');
+:root{
+    --back-- : #151515;
+    --textColor--: #F2F2F2;
+    --crownColor-- : #f4cd2a;
+    --FontTitles--: 'Bangers', cursive;
+    --fontText--: 'Encode Sans', sans-serif;
+    --colorSeg--: #A60303;
+
+
+
+
+}
+*{
+    font-family: var(--fontText--);
+    color: #F2F2F2;
+    box-sizing: border-box;
+   
+    
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: var(--back--); 
+}
+
+header {
+    margin-top: 0;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+     width: 100%;
+   background-color: var(--back--);
+    
+  
+}
+
+header .logo {
+    height: auto;
+    margin-left: 1rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.logo img {
+    height: 4rem;
+    width: 5rem;
+}
+nav {
+    padding-right: 1rem;
+    background: transparent;
+}
+
+nav ul  {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    background-color: transparent;
+   
+    
+}
+
+nav ul li a {
+    font-family: var(--FontTitles--);
+    text-decoration: none;
+    transition: .5s;
+    background: transparent;
+}
+
+nav ul li a:hover{
+    color: var(--colorSeg--);
+}
+
+.segond>li a:hover{
+    color: var(--crownColor--);
+}
+
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: auto;
+    color: #151515;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+main h1 {
+    color: var(--colorSeg--);
+    font-family: var(--FontTitles--);
+    margin-top: 2rem;
+    letter-spacing: 0.5em
+}
+
+#filmContainer, #tvContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.film {
+    width: 18rem;
+    margin: 5rem;
+    background-color: var(--back--);
+    border-radius: 1rem;
+    box-shadow: 5px 0.5px 15px var(--crownColor--);
+    
+}
+
+
+.film  img {
+    width:18rem ;
+    border-radius: 1rem;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+}
+
+#tvContainer  .film  {
+    box-shadow: 5px 0.5px 15px var(--back--);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
