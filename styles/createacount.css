@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Encode+Sans:wght@300&display=swap');
+:root{
+    --back-- : #151515;
+    --textColor--: #F2F2F2;
+    --crownColor-- : #f4cd2a;
+    --FontTitles--: 'Bangers', cursive;
+    --fontText--: 'Encode Sans', sans-serif;
+    --colorSeg--: #A60303;
+
+
+}
+
+
+*{
+    font-family: var(--fontText--);
+    color: #F2F2F2;
+    
+    
+    
+}
+
+
+body {
+    background-image: url(../multimedia/venom-pelicula_3840x2160_xtrafondos.com.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    margin-top: 0;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--back--);
+    
+}
+
+header .logo {
+    height: auto;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.logo img {
+    height: 4rem;
+    width: 5rem;
+}
+nav {
+    padding-right: 1rem;
+    background: transparent;
+    margin-right: 5rem;
+   
+}
+
+nav ul  {
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    background-color: transparent;
+   
+    
+}
+
+nav ul li a {
+    font-family: var(--FontTitles--);
+    text-decoration: none;
+    transition: .5s;
+    background: transparent;
+}
+
+nav ul li a:hover{
+    color: var(--colorSeg--);
+}
+
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  h1 {
+    font-family: var(--FontTitles--);
+    color: var(--crownColor--);
+    letter-spacing: 0.2em;
+    margin-bottom:8rem;
+    margin-left: 20rem;
+  }
+
+  .container form {
+   border-radius: 1rem;
+    height: auto;
+    width: 30rem;
+    margin-left: 20rem;
+    background-color: var(--back--);
+    box-shadow:3px 7px 39px var(--textColor--);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .container form div {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+
+  .container form div label {
+    font-family: var(--FontTitles--);
+    font-size:1.5rem;
+  }
+
+  .container form div input {
+    width: 55%;
+  }
+
+
+  .container form  .btnbox {
+    font-size: 2rem;
+     width: 100%;
+     margin-top:1rem ;
+     background-color: red;
+     align-items: center;
+     justify-content: center;
+     border-radius:1rem; 
+     cursor:pointer;
+     transition: .7s;
+  }
+
+
+
+  .container form .btnbox .btn {
+    text-decoration: none;
+    background-color: transparent;
+    border:none; 
+    cursor: pointer;
+    transition: .7s;
+  }
+
+
+
+  .container form  .btnbox:hover {
+    background-color: var(--textColor--);
+
+  }
+
+
+  .container form  .btnbox .btn:hover{
+    color: var(--back--);
+    font-family: var(--FontTitles--);
+    
+  }
+
+
+
+
+  @media only screen and  (min-width:390px) and (max-width:480px){  /* movil*/
+   
+    header .logo{
+        margin-left: 0;
+    } 
+
+    h1 {
+        margin-left: 2rem ;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    .container form {
+       margin: 1rem;
+        width: auto;
+    }
+
+    .container form div label  {
+        font-size: 0.8rem;
+       
+    }
+  }
+  @media only screen and (min-width: 481px) and (max-width: 800px) { 
+    h1 {
+        font-size: 3rem;
+  
+    }
+    .container form {
+        width: 28rem;
+        margin-right: 10rem;
+    }
+  }
