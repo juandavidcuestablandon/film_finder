@@ -25,17 +25,18 @@ body{
     margin: 0;
     padding: 0;
     background: var(--back--); 
+    height: 70rem;
 }
 
 header {
     margin-top: 0;
-    height: 4rem;
+    height: 10%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     background-color: var(--back--);
     
-  
 }
 
 header .logo {
@@ -89,7 +90,7 @@ nav ul li a:hover{
 
 .login {
     display: flex;
-    
+    height: 70%;
     align-items: center;
     margin-top: 2rem;
 }
@@ -182,8 +183,9 @@ footer {
     display: flex;
     justify-content: space-around;
     background: var(--colorSeg--);
-    height: 6rem;
+    height: 20%;
     margin-top: 0.5rem;
+    align-items: center;
 }
 
 
@@ -191,7 +193,7 @@ footer {
 
 .container {
     display: flex;
-    height: auto;
+    height: 70%;
     width: 100%;
     border: 2px solid var(--textColor--);
     margin-top: 1rem;
@@ -310,4 +312,172 @@ footer {
 
 #tvContainer  .film  {
     box-shadow: 5px 0.5px 15px var(--back--);
+}
+
+
+@media only screen and  (min-width:390px) and (max-width:480px){  /*movil*/
+ header {
+    flex-direction:  column;
+    text-align: center;
+ }
+
+ header .logo {
+    margin-top : 1rem;
+    margin-left: 0;
+ }
+ nav {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+ }
+
+.login {
+    flex-direction: column;
+   align-items: center;
+    height: auto;
+}
+
+.login .img {
+    width: 90%;
+   
+}
+.login .img  img {
+    width: 100%;
+    margin: 0;
+    height: 20rem;
+}
+
+.login .box{
+    width: 100%;
+    padding: 3rem;
+}
+
+.login .box form {
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+   padding-bottom: .5rem;
+}
+
+
+/*sesion user*/
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.container aside  {
+display: grid;
+grid-template-columns: 1fr 1fr;
+width: 100%;
+height: auto;
+
+}
+
+.container aside  div {
+    height: 2rem;
+}
+
+.container aside  div button {
+    font-size: 1rem;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container aside  div button h3 {
+    font-size: .9rem;
+ 
+}
+
+.container #apires {
+    width: 100%;
+}
+
+body {
+    height: auto;
+}
+
+.footer{
+    margin-top: 6rem;
+}
+
+
+
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+
+    .login {
+        flex-direction: column;
+       align-items: center;
+        height: auto;
+    }
+    .login .img {
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .login .img img {
+        width: 100%;
+        height: 18rem;
+    }
+
+
+    .login .box {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .box form {
+        width: 40rem;
+    }
+
+
+    /*sesion user*/
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container aside  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: auto;
+        
+     }
+
+     .container #apires {
+        width: 100%;
+      
+    }
+    
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+    
+
+
+
+
 }

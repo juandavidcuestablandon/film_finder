@@ -26,6 +26,7 @@ body{
     background: var(--back--); 
 }
 
+
 header {
     margin-top: 0;
     height: 4rem;
@@ -376,6 +377,134 @@ footer{
 .three{
   color:var(--crownColor--);
 }
+
+
+
+
+@media only screen and  (min-width:390px) and (max-width:480px){
+   /* movil */
+ header{
+  flex-direction: column;
+  align-items: center;
+   height: auto;
+  position: inherit;
+  z-index: 0;
+ }
+ nav {
+  display: none;
+ }
+ .nav2 {
+  display: block;
+  font-size: 1.5rem;
+ }
+
+
+
+.texto-video h2{
+  font-size: 1.5rem; 
+  padding-top: 3rem;
+  margin-bottom: 1rem;  
+ }
+
+ .btn{
+  font-size: 1.5rem;
+ } 
+
+ .peliculas {
+flex-direction: inherit;
+
+ }
+#peliculas , #television,#suscripciones{
+display: block;
+text-align: center;
+height: auto;
+
+ }
+ .container {
+  flex-direction: column;
+ }
+
+ #television{
+  margin-top: 2rem;
+  padding-top: 1rem;
+ }
+
+ #television  .container {
+  flex-direction: column-reverse;
+ }
+
+ .contenido{
+  flex-direction: column;  
+ }
+
+ #suscripciones .contenido .box {
+  width: 90%;
+ }
+
+ footer {
+  flex-direction: column;
+  text-align: center;
+ }
+
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 800px) { /* tablet*/
+  header{
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+     height: auto;
+    position: inherit;
+    z-index: 0;
+   }
+  nav {
+    display: flex;
+    font-size: 1.5rem;
+  }
+
+  .texto-video h2{
+    font-size: 1.5rem; 
+    padding-top: 3rem;
+    margin-bottom: 1rem;  
+   }
+  
+   .btn{
+    font-size: 1.5rem;
+   } 
+  #suscripciones {
+    display: block;
+    text-align: center;
+    height: auto;
+
+  }
+  .contenido {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  #suscripciones .contenido .box {
+    width: 80%;
+  }
+
+  
+ footer {
+  flex-direction: column;
+  text-align: center;
+ }
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
