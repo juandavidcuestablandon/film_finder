@@ -14,7 +14,7 @@ import { fetchDataFromAPI } from './components/funciones.js';
 
   function showFilms(response) {
   const fragment = new DocumentFragment();
-  // console.log(response.results)
+  
   const container = document.querySelector('#filmContainer')
   const templete = document.querySelector('#card').content
    const imglink = 'https://image.tmdb.org/t/p/w500/'

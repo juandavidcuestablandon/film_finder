@@ -184,7 +184,7 @@ footer {
     justify-content: space-around;
     background: var(--colorSeg--);
     height: 20%;
-    margin-top: 0.5rem;
+    margin-top: 8rem;
     align-items: center;
 }
 
@@ -193,7 +193,7 @@ footer {
 
 .container {
     display: flex;
-    height: 70%;
+    height: auto;
     width: 100%;
     border: 2px solid var(--textColor--);
     margin-top: 1rem;
@@ -244,12 +244,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: auto;
 }
 
 
 
 
-.film ,.tv{
+.film ,.tv, .busqueda, .tendencia{
     width: 18rem;
     margin: 5rem;
     background-color: var(--back--);
@@ -259,7 +260,7 @@ footer {
     
 }
 
-.film  img , .tv img {
+.film img , .tv img , .busqueda img  ,.tendencia img{
     width:18rem ;
     border-radius: 1rem;
 }
@@ -313,6 +314,38 @@ footer {
 #tvContainer  .film  {
     box-shadow: 5px 0.5px 15px var(--back--);
 }
+
+
+
+/*Seccion barra de busqueda */
+
+#buscar {
+    background-color: var(--back--);
+    border: solid 1px var(--colorSeg--);
+    height: 2rem;
+    width: auto;
+}
+
+#btn {
+    background-color: var(--crownColor--);
+    height: 2rem;
+    color: var(--back--);
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--colorSeg--);
+    font-family: var(--FontTitles--);
+    transition: .5s;
+    
+}
+
+
+#btn:hover {
+    background-color: var(--colorSeg--);
+    color: var(--textColor--);
+}
+
+
+
 
 
 @media only screen and  (min-width:390px) and (max-width:480px){  /*movil*/
