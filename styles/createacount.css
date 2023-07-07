@@ -141,6 +141,7 @@ nav ul li a:hover{
      border-radius:1rem; 
      cursor:pointer;
      transition: .7s;
+     height: 3rem;
   }
 
 
@@ -163,9 +164,27 @@ nav ul li a:hover{
 
   .container form  .btnbox .btn:hover{
     color: var(--back--);
-    font-family: var(--FontTitles--);
+
     
   }
+
+  input {
+    color: black;
+  }
+
+
+  span {
+    color: red;
+    margin-top: 1rem;
+  }
+
+
+  #message {
+    text-align: center;
+    color: green;
+    font-size: 1.5rem;
+  }
+
 
 
 

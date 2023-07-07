@@ -21,7 +21,7 @@ export async function fetchDataFromAPI(ubication) {
 
 
 
- // Sirve para limpiar la pantalla en los resultados de la api para ser una SPA
+ // Sirve para limpiar la pantalla en los resultados de la api para simular  una SPA
 
  export function clearDataApi() {
 
@@ -42,8 +42,8 @@ const searchResults = document.querySelectorAll('.busqueda');
 for (const search of searchResults) {
   search.setAttribute("style", "display: none;");
 
-const filmsTren = document.querySelectorAll('.tendencia')
-for (const filmTre of filmsTren) {
+const filmsTens = document.querySelectorAll('.tendencia')
+for (const filmTre of filmsTens) {
   filmTre.setAttribute("style", "display: none;");
 }
 
@@ -58,6 +58,7 @@ for (const filmTre of filmsTren) {
   const likes = document.querySelectorAll(".like");
   for (const like of likes) {
     like.addEventListener("click", () => {
+      alert()
         const film = like.closest('.film');
         const tv = like.closest('.tv');
         const search = like.closest('.busqueda');

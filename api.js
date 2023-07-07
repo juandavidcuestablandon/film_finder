@@ -4,7 +4,7 @@ import { fetchDataFromAPI } from './components/funciones.js';
 
 
  async function handleDataFromAPI() {
-   const urlfilm = 'movie'
+   const urlfilm = 'discover/movie'
      const data = await fetchDataFromAPI(urlfilm);
      showFilms(data)
     

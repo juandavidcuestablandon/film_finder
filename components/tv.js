@@ -2,7 +2,7 @@
 import { fetchDataFromAPI } from './funciones.js';
 
 async function handleDataFromAPI() {
-  const urlTvData = 'tv?include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc'
+  const urlTvData = 'discover/tv?include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc'
    const data = await fetchDataFromAPI(urlTvData);
    showTv(data)
  

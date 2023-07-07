@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/createacount.css">
     <link rel="icon" href="../multimedia/2.png" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../components/createacount.js"  defer></script>
     <title>Crear Cuenta</title>
 </head>
 <body>
@@ -26,41 +27,39 @@
 
         <h1>Crea tu Cuenta FilmFinder!</h1>
         
-      <form method="post">
+      <form method="post" id="form" >
         <div>
         <label for="name">Nombre:</label>
-        <input type="text">
+        <input type="text" id="name">
     </div>
-    <span></span>
+         <span></span>
     
         <div>
          <label for="apellido">Apellido: </label>  
-         <input type="text">
+         <input type="text" id="apellido">
         </div>
         
         <span></span>
+
         <div>
             <label for="email">Correo Electroníco:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email"  autocomplete="current-password">
         </div>
         <span></span>
 
         <div>
             <label for="contrseyna">Contraseña: </label>
-            <input type="password" name="pass" id="pass">
+            <input type="password" name="pass" id="pass"  autocomplete="current-password">
         </div>
         <span></span>
 
-        <div>
-            <label for="repass">Repetir Contraseña:</label>
-            <input type="password" name="repass" id="repass">
-        </div>
-        <span></span>
         
         <div class="btnbox">
             <input type="submit" value="CREAR CUENTA" class="btn">
             <i class='bx bx-film bx-spin' style='color:#f7df00' ></i>
         </div>
+
+        <span id="message"></span>
       </form>
     </div>
   </body>
