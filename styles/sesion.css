@@ -8,8 +8,6 @@
     --colorSeg--: #A60303;
 
 
-
-
 }
 *{
     font-family: var(--fontText--);
@@ -317,6 +315,8 @@ footer {
 
 
 
+
+
 /*Seccion barra de busqueda */
 
 #buscar {
@@ -343,6 +343,87 @@ footer {
     background-color: var(--colorSeg--);
     color: var(--textColor--);
 }
+
+
+
+
+/* seccion user information  */
+
+#userContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: var(--textColor--);
+    height: 70%;
+
+}
+
+
+#profilePicPreview {
+    height: 10rem;
+    width: 10rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+} 
+
+
+
+#userContent div h3  {
+  color: var(--back--);
+}
+
+#userContent div span {
+    color: black;
+}
+
+
+
+/* suucriociones  */
+.main {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#suscripcionsContainer div {
+    width: 30rem;
+    height: 35rem;
+    background-color: var(--textColor--);
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+
+#suscripcionsContainer div label ,#suscripcionsContainer div input , select ,option{
+    color: var(--back--);
+    
+}
+
+
+#suscripcionsContainer div label  {
+    font-family: var(--FontTitles--);
+}
+
+select {
+    background-color: var(--crownColor--);
+}
+
+#btns .btn {
+    color: white;
+    background-color: var(--colorSeg--);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+#message {
+    color: green;
+}
+
+
 
 
 
@@ -441,6 +522,14 @@ body {
 
 .footer{
     margin-top: 6rem;
+}
+
+
+
+/* suscripciones */
+
+#suscripcionsContainer div {
+    width: 20rem;
 }
 
 

@@ -23,6 +23,8 @@ export async function fetchDataFromAPI(ubication) {
 
  // Sirve para limpiar la pantalla en los resultados de la api para simular  una SPA
 
+//limpiar 
+
  export function clearDataApi() {
 
   const img = document.querySelector("#img")
@@ -41,28 +43,29 @@ export async function fetchDataFromAPI(ubication) {
 const searchResults = document.querySelectorAll('.busqueda');
 for (const search of searchResults) {
   search.setAttribute("style", "display: none;");
-
-const filmsTens = document.querySelectorAll('.tendencia')
-for (const filmTre of filmsTens) {
-  filmTre.setAttribute("style", "display: none;");
 }
 
-} 
+const filmsTens = document.querySelectorAll('.tendencia')
+console.log(filmsTens)
+ for (const filmTre of filmsTens) {
+   filmTre.setAttribute("style", "display: none;");
+ }
 
+ 
  }
 
 
 // funcionalidad de favoritos
 
- export function addFavorites() {
+ export  function addFavorites() {
   const likes = document.querySelectorAll(".like");
   for (const like of likes) {
     like.addEventListener("click", () => {
-      alert()
+      
         const film = like.closest('.film');
         const tv = like.closest('.tv');
         const search = like.closest('.busqueda');
-        const movietre = like.closest('.tendencia')
+        const tendencia = like.closest('.tendencia')
       if (film) {
         film.classList.add("active");
       } 
@@ -73,21 +76,23 @@ for (const filmTre of filmsTens) {
         search.classList.add("active");
       }
 
-      if (movietre) {
-        movietre.classList.add("active");
+      if (tendencia) {
+        tendencia.classList.add("active");
+       
       }
      
     });
   }
 }
 
- export function seccionFavorites (){
+
+ export function seccionFavorites(){
 
 const favorites = document.querySelector('#favorites');
-
 favorites.addEventListener("click", () => {
 
   clearDataApi();
+
   
   const active = document.querySelectorAll('.active')
   
@@ -109,3 +114,4 @@ favorites.addEventListener("click", () => {
 });
 
 }
+

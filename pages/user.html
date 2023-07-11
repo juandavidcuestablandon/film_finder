@@ -6,68 +6,52 @@
     <link rel="stylesheet" href="../styles/sesion.css">
     <link rel="icon" href="../multimedia/2.png" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="../components/sessioncontent.js" type="module"></script>
-    <title>USER</title>
+    <script src="../components/user.js" defer></script>
+    <title>User</title>
 </head>
 <body>
     <header>
         <div class="logo">
            <a href="../index.html"><img src="../multimedia/FILFINDER.png" alt="logo"></a> 
         </div>
-
-        <div>
-            <input type="search" name="buscar" placeholder="La Sirenita" id="buscar">
-            <input type="button" value="BUSCAR" id="btn">
-        </div>
-        
+       
         <nav>
             <ul class="segond">
-              <li><a href="./user.html">User</a></li>
-              <li><a href="../index.html">Cerrar session!</a></li>
+              <li><a href="../pages/sessionuser.html">Volver</a></li>
+              <li><a href="../index.html">Cerrar Sesion</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        <aside>
+
+    <main id="userContent">
+        <div>
+        <form action="post">
+            <input type="file" name="img" id="profilePicInput">
+        </form>
+        <img  id="profilePicPreview" src="" alt="">
+        </div>
+        <div>
+
             <div>
-               <button id="series"><h3>televisión</h3></button>
+                <h3>Nombre:</h3> <span id="name"></span>
             </div>
             <div>
-                <button id="films"><h3>peliculas</h3></button>
+                <h3>Apellido:</h3> <span id="lastname"></span>
             </div>
             <div>
-                <button id="tranding"><h3>Tendencias</h3></button>
+                <h3>Email:</h3> <span id="email"></span>
+    
             </div>
             <div>
-                <button id="favorites"><h3>favoritos</h3></button>
+                <h3>Suscripción: </h3> <span id="sus"></span>
             </div>
-        </aside>
-        <div id="apires">
-            <div id="img">
-                <h3>BIENVENIDO</h3>
-                <img  src="../multimedia/pagesession.jpg" width="500px">
-            </div>
-            
         </div>
 
-        <template id="card">
-           
-                <div>
-                  <img src="#" alt="nombre">  
-                  <h2 class="name">title</h2>
-                <button class="like"><i class='bx bxs-heart bx-burst' style='color:#f90000' ></i></button>
-                </div>         
-
-            
-        </template>
-
-
-
+        
     </main>
 
-
-    <footer class="footer">
+    <footer>
         <div><h3>Derechos de Copyrigth</h3></div>
         <div class="Redes">
             <h3>Nuestras Redes:</h3>
@@ -82,8 +66,5 @@
         </div>
         
     </footer>
-
-
-  
 </body>
 </html>
