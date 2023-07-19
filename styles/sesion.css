@@ -380,6 +380,9 @@ footer {
 
 /* suucriociones  */
 .main {
+    background-image: url("../multimedia/rapido.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 70%;
     display: flex;
     justify-content: center;

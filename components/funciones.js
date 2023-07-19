@@ -68,16 +68,21 @@ console.log(filmsTens)
         const tendencia = like.closest('.tendencia')
       if (film) {
         film.classList.add("active");
+        like.innerHTML = "<i class='bx bxs-bookmark-heart bx-tada' style='color:#f9eb06'  ></i>" 
+    
       } 
       if (tv){
         tv.classList.add("active");
+        like.innerHTML = "<i class='bx bxs-bookmark-heart bx-tada' style='color:#f9eb06'  ></i>" 
       }
       if (search) {
         search.classList.add("active");
+        like.innerHTML = "<i class='bx bxs-bookmark-heart bx-tada' style='color:#f9eb06'  ></i>" 
       }
 
       if (tendencia) {
         tendencia.classList.add("active");
+        like.innerHTML = "<i class='bx bxs-bookmark-heart bx-tada' style='color:#f9eb06'  ></i>" 
        
       }
      
