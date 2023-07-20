@@ -432,11 +432,13 @@ select {
 
 
 
-@media only screen and  (min-width:390px) and (max-width:480px){  /*movil*/
+@media only screen and  (max-width : 480px) {  /*movil*/
  header {
     flex-direction:  column;
     text-align: center;
  }
+ 
+
 
  header .logo {
     margin-top : 1rem;
@@ -537,12 +539,11 @@ body {
 
 
 
-
 }
 
 
-@media only screen and (min-width: 481px) and (max-width: 800px) {
-
+@media only screen and (min-width: 481px) and (max-width: 800px) {  
+   
     .login {
         flex-direction: column;
        align-items: center;

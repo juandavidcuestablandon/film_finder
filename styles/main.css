@@ -381,7 +381,7 @@ footer{
 
 
 
-@media only screen and  (min-width:390px) and (max-width:480px){
+@media only screen and (max-width:480px){
    /* movil */
  header{
   flex-direction: column;
